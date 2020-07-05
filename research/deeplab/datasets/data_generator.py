@@ -101,10 +101,10 @@ _ADE20K_INFORMATION = DatasetDescriptor(
 
 _CUSTOM_RONY_ = DatasetDescriptor(
     splits_to_sizes={
-        'train': 367,  # num of samples in images/training
-        'val': 101,  # num of samples in images/validation
+        'train': 87,  # num of samples in images/training
+        'val': 0,  # num of samples in images/validation
     },
-    num_classes=12, # classes(11) + ingore_label(1)
+    num_classes=2, # classes including background, no ignore_label
     ignore_label=255,
 )
 
