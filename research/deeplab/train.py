@@ -92,7 +92,7 @@ flags.DEFINE_enum('learning_policy', 'poly', ['poly', 'step'],
 
 # Use 0.007 when training on PASCAL augmented training set, train_aug. When
 # fine-tuning on PASCAL trainval set, use learning rate=0.0001.
-flags.DEFINE_float('base_learning_rate', .0001,
+flags.DEFINE_float('base_learning_rate', .03,
                    'The base learning rate for model training.')
 
 flags.DEFINE_float('decay_steps', 0.0,
@@ -116,7 +116,7 @@ flags.DEFINE_integer('training_number_of_steps', 30000,
 flags.DEFINE_float('momentum', 0.9, 'The momentum value to use')
 
 # Adam optimizer flags
-flags.DEFINE_float('adam_learning_rate', 0.001,
+flags.DEFINE_float('adam_learning_rate', 0.03,
                    'Learning rate for the adam optimizer.')
 flags.DEFINE_float('adam_epsilon', 1e-08, 'Adam optimizer epsilon.')
 
